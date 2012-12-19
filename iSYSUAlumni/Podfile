@@ -1,0 +1,10 @@
+platform :ios
+
+pod 'Nimbus', '0.9.3'
+pod 'MBProgressHUD', '0.5'
+pod 'ASIHTTPRequest', '1.8.1'
+pod 'SDWebImage', '2.7'
+pod 'EGOTableViewPullRefresh', '0.1.0'
+pod 'FMDB', '2.0'
+pod 'MFSideMenu', '0.3'
+pod 'objectiveflickr', '2.0.2'

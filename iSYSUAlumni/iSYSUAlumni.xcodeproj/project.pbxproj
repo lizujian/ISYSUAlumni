@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		143C27691681A24300B80BEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143C27681681A24300B80BEC /* UIKit.framework */; };
+		143C276B1681A24300B80BEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143C276A1681A24300B80BEC /* Foundation.framework */; };
+		143C276D1681A24300B80BEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 143C276C1681A24300B80BEC /* CoreGraphics.framework */; };
+		143C27731681A24300B80BEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 143C27711681A24300B80BEC /* InfoPlist.strings */; };
+		143C27751681A24300B80BEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C27741681A24300B80BEC /* main.m */; };
+		143C27791681A24300B80BEC /* SYSUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C27781681A24300B80BEC /* SYSUAppDelegate.m */; };
+		143C277B1681A24300B80BEC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 143C277A1681A24300B80BEC /* Default.png */; };
+		143C277D1681A24300B80BEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 143C277C1681A24300B80BEC /* Default@2x.png */; };
+		143C277F1681A24300B80BEC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 143C277E1681A24300B80BEC /* Default-568h@2x.png */; };
+		14B4C0DC1681AD27009886DF /* SYSUBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C0DB1681AD27009886DF /* SYSUBaseViewController.m */; };
+		14B4C0DF1681AD57009886DF /* SYSUNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C0DE1681AD57009886DF /* SYSUNewsViewController.m */; };
+		14B4C0E21681AD74009886DF /* SYSUSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C0E11681AD74009886DF /* SYSUSideMenuViewController.m */; };
+		14B4C0E41681B022009886DF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C0E31681B022009886DF /* QuartzCore.framework */; };
+		14B4C11E1681BAD3009886DF /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C0F91681BAD3009886DF /* AFHTTPClient.m */; };
+		14B4C11F1681BAD3009886DF /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C0FB1681BAD3009886DF /* AFHTTPRequestOperation.m */; };
+		14B4C1201681BAD3009886DF /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C0FD1681BAD3009886DF /* AFURLConnectionOperation.m */; };
+		14B4C1211681BAD3009886DF /* libWeChatSDK_armv7_armv7s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C0FF1681BAD3009886DF /* libWeChatSDK_armv7_armv7s.a */; };
+		14B4C1221681BAD3009886DF /* UMSocialBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C10D1681BAD3009886DF /* UMSocialBarView.m */; };
+		14B4C1231681BAD3009886DF /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C1141681BAD3009886DF /* UMSCommentDetailController.xib */; };
+		14B4C1241681BAD3009886DF /* UMSCommentInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C1151681BAD3009886DF /* UMSCommentInputController.xib */; };
+		14B4C1251681BAD3009886DF /* UMSCommentInputControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C1161681BAD3009886DF /* UMSCommentInputControlleriPad.xib */; };
+		14B4C1261681BAD3009886DF /* UMShareEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C1171681BAD3009886DF /* UMShareEditViewController.xib */; };
+		14B4C1271681BAD3009886DF /* UMShareEditViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C1181681BAD3009886DF /* UMShareEditViewControlleriPad.xib */; };
+		14B4C1281681BAD3009886DF /* UMSnsAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C1191681BAD3009886DF /* UMSnsAccountViewController.xib */; };
+		14B4C1291681BAD3009886DF /* UMSShareListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C11A1681BAD3009886DF /* UMSShareListController.xib */; };
+		14B4C12A1681BAD3009886DF /* UMSocial_Sdk_1.5.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C11B1681BAD3009886DF /* UMSocial_Sdk_1.5.3.a */; };
+		14B4C12B1681BAD3009886DF /* UMSocial_Sdk_Comment_1.5.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C11C1681BAD3009886DF /* UMSocial_Sdk_Comment_1.5.3.a */; };
+		14B4C12C1681BAD3009886DF /* UMSocialSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14B4C11D1681BAD3009886DF /* UMSocialSDKResources.bundle */; };
+		14B4C12F1681BAFF009886DF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C12E1681BAFF009886DF /* MobileCoreServices.framework */; };
+		14B4C1311681BB08009886DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C1301681BB08009886DF /* SystemConfiguration.framework */; };
+		14B4C1331681BB11009886DF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C1321681BB10009886DF /* MessageUI.framework */; };
+		14B4C1351681BB1A009886DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C1341681BB1A009886DF /* MapKit.framework */; };
+		14B4C1371681BB24009886DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4C1361681BB24009886DF /* CoreLocation.framework */; };
+		14B4C13A1681BB85009886DF /* SYSUSNSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B4C1391681BB85009886DF /* SYSUSNSViewController.m */; };
+		81DDAB328E774749A6A4FC79 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 778A1964DEBC4BF3BC8C5EEB /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		143C27641681A24300B80BEC /* iSYSUAlumni.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSYSUAlumni.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		143C27681681A24300B80BEC /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		143C276A1681A24300B80BEC /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		143C276C1681A24300B80BEC /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		143C27701681A24300B80BEC /* iSYSUAlumni-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSYSUAlumni-Info.plist"; sourceTree = "<group>"; };
+		143C27721681A24300B80BEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		143C27741681A24300B80BEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		143C27761681A24300B80BEC /* iSYSUAlumni-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSYSUAlumni-Prefix.pch"; sourceTree = "<group>"; };
+		143C27771681A24300B80BEC /* SYSUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYSUAppDelegate.h; sourceTree = "<group>"; };
+		143C27781681A24300B80BEC /* SYSUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYSUAppDelegate.m; sourceTree = "<group>"; };
+		143C277A1681A24300B80BEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		143C277C1681A24300B80BEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		143C277E1681A24300B80BEC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		14B4C0DA1681AD27009886DF /* SYSUBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSUBaseViewController.h; sourceTree = "<group>"; };
+		14B4C0DB1681AD27009886DF /* SYSUBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSUBaseViewController.m; sourceTree = "<group>"; };
+		14B4C0DD1681AD57009886DF /* SYSUNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSUNewsViewController.h; sourceTree = "<group>"; };
+		14B4C0DE1681AD57009886DF /* SYSUNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSUNewsViewController.m; sourceTree = "<group>"; };
+		14B4C0E01681AD74009886DF /* SYSUSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSUSideMenuViewController.h; sourceTree = "<group>"; };
+		14B4C0E11681AD74009886DF /* SYSUSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSUSideMenuViewController.m; sourceTree = "<group>"; };
+		14B4C0E31681B022009886DF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14B4C0F81681BAD3009886DF /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		14B4C0F91681BAD3009886DF /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		14B4C0FA1681BAD3009886DF /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		14B4C0FB1681BAD3009886DF /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		14B4C0FC1681BAD3009886DF /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		14B4C0FD1681BAD3009886DF /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		14B4C0FF1681BAD3009886DF /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
+		14B4C1001681BAD3009886DF /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		14B4C1011681BAD3009886DF /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		14B4C1041681BAD3009886DF /* UMSocialAccountEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountEntity.h; sourceTree = "<group>"; };
+		14B4C1051681BAD3009886DF /* UMSocialData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialData.h; sourceTree = "<group>"; };
+		14B4C1061681BAD3009886DF /* UMSocialDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialDataDelegate.h; sourceTree = "<group>"; };
+		14B4C1071681BAD3009886DF /* UMSocialDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialDataService.h; sourceTree = "<group>"; };
+		14B4C1081681BAD3009886DF /* UMSocialEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialEnum.h; sourceTree = "<group>"; };
+		14B4C1091681BAD3009886DF /* UMSocialResponseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialResponseEntity.h; sourceTree = "<group>"; };
+		14B4C10B1681BAD3009886DF /* UMSocialBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialBar.h; sourceTree = "<group>"; };
+		14B4C10C1681BAD3009886DF /* UMSocialBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialBarView.h; sourceTree = "<group>"; };
+		14B4C10D1681BAD3009886DF /* UMSocialBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMSocialBarView.m; sourceTree = "<group>"; };
+		14B4C10E1681BAD3009886DF /* UMSocialConfigDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialConfigDelegate.h; sourceTree = "<group>"; };
+		14B4C10F1681BAD3009886DF /* UMSocialControllerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerService.h; sourceTree = "<group>"; };
+		14B4C1101681BAD3009886DF /* UMSocialControllerServiceComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialControllerServiceComment.h; sourceTree = "<group>"; };
+		14B4C1111681BAD3009886DF /* UMSocialMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialMacroDefine.h; sourceTree = "<group>"; };
+		14B4C1121681BAD3009886DF /* UMSocialUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialUIHelper.h; sourceTree = "<group>"; };
+		14B4C1141681BAD3009886DF /* UMSCommentDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentDetailController.xib; sourceTree = "<group>"; };
+		14B4C1151681BAD3009886DF /* UMSCommentInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputController.xib; sourceTree = "<group>"; };
+		14B4C1161681BAD3009886DF /* UMSCommentInputControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputControlleriPad.xib; sourceTree = "<group>"; };
+		14B4C1171681BAD3009886DF /* UMShareEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewController.xib; sourceTree = "<group>"; };
+		14B4C1181681BAD3009886DF /* UMShareEditViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewControlleriPad.xib; sourceTree = "<group>"; };
+		14B4C1191681BAD3009886DF /* UMSnsAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSnsAccountViewController.xib; sourceTree = "<group>"; };
+		14B4C11A1681BAD3009886DF /* UMSShareListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSShareListController.xib; sourceTree = "<group>"; };
+		14B4C11B1681BAD3009886DF /* UMSocial_Sdk_1.5.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = UMSocial_Sdk_1.5.3.a; sourceTree = "<group>"; };
+		14B4C11C1681BAD3009886DF /* UMSocial_Sdk_Comment_1.5.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = UMSocial_Sdk_Comment_1.5.3.a; sourceTree = "<group>"; };
+		14B4C11D1681BAD3009886DF /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		14B4C12E1681BAFF009886DF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		14B4C1301681BB08009886DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		14B4C1321681BB10009886DF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		14B4C1341681BB1A009886DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		14B4C1361681BB24009886DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		14B4C1381681BB85009886DF /* SYSUSNSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSUSNSViewController.h; sourceTree = "<group>"; };
+		14B4C1391681BB85009886DF /* SYSUSNSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSUSNSViewController.m; sourceTree = "<group>"; };
+		778A1964DEBC4BF3BC8C5EEB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B44EA1D8F3408E8FB1C923 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143C27611681A24300B80BEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B4C1371681BB24009886DF /* CoreLocation.framework in Frameworks */,
+				14B4C1351681BB1A009886DF /* MapKit.framework in Frameworks */,
+				14B4C1331681BB11009886DF /* MessageUI.framework in Frameworks */,
+				14B4C1311681BB08009886DF /* SystemConfiguration.framework in Frameworks */,
+				14B4C12F1681BAFF009886DF /* MobileCoreServices.framework in Frameworks */,
+				14B4C0E41681B022009886DF /* QuartzCore.framework in Frameworks */,
+				143C27691681A24300B80BEC /* UIKit.framework in Frameworks */,
+				143C276B1681A24300B80BEC /* Foundation.framework in Frameworks */,
+				143C276D1681A24300B80BEC /* CoreGraphics.framework in Frameworks */,
+				81DDAB328E774749A6A4FC79 /* libPods.a in Frameworks */,
+				14B4C1211681BAD3009886DF /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
+				14B4C12A1681BAD3009886DF /* UMSocial_Sdk_1.5.3.a in Frameworks */,
+				14B4C12B1681BAD3009886DF /* UMSocial_Sdk_Comment_1.5.3.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143C27591681A24300B80BEC = {
+			isa = PBXGroup;
+			children = (
+				143C276E1681A24300B80BEC /* iSYSUAlumni */,
+				143C27671681A24300B80BEC /* Frameworks */,
+				143C27651681A24300B80BEC /* Products */,
+				B0B44EA1D8F3408E8FB1C923 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		143C27651681A24300B80BEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				143C27641681A24300B80BEC /* iSYSUAlumni.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		143C27671681A24300B80BEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C1361681BB24009886DF /* CoreLocation.framework */,
+				14B4C1341681BB1A009886DF /* MapKit.framework */,
+				14B4C1321681BB10009886DF /* MessageUI.framework */,
+				14B4C1301681BB08009886DF /* SystemConfiguration.framework */,
+				14B4C12E1681BAFF009886DF /* MobileCoreServices.framework */,
+				14B4C0E31681B022009886DF /* QuartzCore.framework */,
+				143C27681681A24300B80BEC /* UIKit.framework */,
+				143C276A1681A24300B80BEC /* Foundation.framework */,
+				143C276C1681A24300B80BEC /* CoreGraphics.framework */,
+				778A1964DEBC4BF3BC8C5EEB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		143C276E1681A24300B80BEC /* iSYSUAlumni */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0F41681BAD3009886DF /* ThirdPart */,
+				14B4C0C91681AB78009886DF /* View */,
+				143C27771681A24300B80BEC /* SYSUAppDelegate.h */,
+				143C27781681A24300B80BEC /* SYSUAppDelegate.m */,
+				143C276F1681A24300B80BEC /* Supporting Files */,
+			);
+			path = iSYSUAlumni;
+			sourceTree = "<group>";
+		};
+		143C276F1681A24300B80BEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				143C27701681A24300B80BEC /* iSYSUAlumni-Info.plist */,
+				143C27711681A24300B80BEC /* InfoPlist.strings */,
+				143C27741681A24300B80BEC /* main.m */,
+				143C27761681A24300B80BEC /* iSYSUAlumni-Prefix.pch */,
+				143C277A1681A24300B80BEC /* Default.png */,
+				143C277C1681A24300B80BEC /* Default@2x.png */,
+				143C277E1681A24300B80BEC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14B4C0C91681AB78009886DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0CA1681AB78009886DF /* Custom */,
+				14B4C0CB1681AB78009886DF /* VC */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14B4C0CA1681AB78009886DF /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		14B4C0CB1681AB78009886DF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0D71681ACE5009886DF /* Right */,
+				14B4C0D81681ACE5009886DF /* Left */,
+				14B4C0D91681ACE5009886DF /* Main */,
+				14B4C0DA1681AD27009886DF /* SYSUBaseViewController.h */,
+				14B4C0DB1681AD27009886DF /* SYSUBaseViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		14B4C0D71681ACE5009886DF /* Right */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Right;
+			sourceTree = "<group>";
+		};
+		14B4C0D81681ACE5009886DF /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0E01681AD74009886DF /* SYSUSideMenuViewController.h */,
+				14B4C0E11681AD74009886DF /* SYSUSideMenuViewController.m */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
+		14B4C0D91681ACE5009886DF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0DD1681AD57009886DF /* SYSUNewsViewController.h */,
+				14B4C0DE1681AD57009886DF /* SYSUNewsViewController.m */,
+				14B4C1381681BB85009886DF /* SYSUSNSViewController.h */,
+				14B4C1391681BB85009886DF /* SYSUSNSViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		14B4C0F41681BAD3009886DF /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0F51681BAD3009886DF /* UMSocial_Sdk_1.5.3 */,
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		14B4C0F51681BAD3009886DF /* UMSocial_Sdk_1.5.3 */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0F61681BAD3009886DF /* frameworks */,
+				14B4C1021681BAD3009886DF /* Headers */,
+				14B4C1131681BAD3009886DF /* SocialSDKXib */,
+				14B4C11B1681BAD3009886DF /* UMSocial_Sdk_1.5.3.a */,
+				14B4C11C1681BAD3009886DF /* UMSocial_Sdk_Comment_1.5.3.a */,
+				14B4C11D1681BAD3009886DF /* UMSocialSDKResources.bundle */,
+			);
+			path = UMSocial_Sdk_1.5.3;
+			sourceTree = "<group>";
+		};
+		14B4C0F61681BAD3009886DF /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0F71681BAD3009886DF /* AFNetworking */,
+				14B4C0FE1681BAD3009886DF /* Wechat */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
+		14B4C0F71681BAD3009886DF /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0F81681BAD3009886DF /* AFHTTPClient.h */,
+				14B4C0F91681BAD3009886DF /* AFHTTPClient.m */,
+				14B4C0FA1681BAD3009886DF /* AFHTTPRequestOperation.h */,
+				14B4C0FB1681BAD3009886DF /* AFHTTPRequestOperation.m */,
+				14B4C0FC1681BAD3009886DF /* AFURLConnectionOperation.h */,
+				14B4C0FD1681BAD3009886DF /* AFURLConnectionOperation.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		14B4C0FE1681BAD3009886DF /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C0FF1681BAD3009886DF /* libWeChatSDK_armv7_armv7s.a */,
+				14B4C1001681BAD3009886DF /* WXApi.h */,
+				14B4C1011681BAD3009886DF /* WXApiObject.h */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		14B4C1021681BAD3009886DF /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C1031681BAD3009886DF /* DataAPI */,
+				14B4C10A1681BAD3009886DF /* UIAPI */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		14B4C1031681BAD3009886DF /* DataAPI */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C1041681BAD3009886DF /* UMSocialAccountEntity.h */,
+				14B4C1051681BAD3009886DF /* UMSocialData.h */,
+				14B4C1061681BAD3009886DF /* UMSocialDataDelegate.h */,
+				14B4C1071681BAD3009886DF /* UMSocialDataService.h */,
+				14B4C1081681BAD3009886DF /* UMSocialEnum.h */,
+				14B4C1091681BAD3009886DF /* UMSocialResponseEntity.h */,
+			);
+			path = DataAPI;
+			sourceTree = "<group>";
+		};
+		14B4C10A1681BAD3009886DF /* UIAPI */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C10B1681BAD3009886DF /* UMSocialBar.h */,
+				14B4C10C1681BAD3009886DF /* UMSocialBarView.h */,
+				14B4C10D1681BAD3009886DF /* UMSocialBarView.m */,
+				14B4C10E1681BAD3009886DF /* UMSocialConfigDelegate.h */,
+				14B4C10F1681BAD3009886DF /* UMSocialControllerService.h */,
+				14B4C1101681BAD3009886DF /* UMSocialControllerServiceComment.h */,
+				14B4C1111681BAD3009886DF /* UMSocialMacroDefine.h */,
+				14B4C1121681BAD3009886DF /* UMSocialUIHelper.h */,
+			);
+			path = UIAPI;
+			sourceTree = "<group>";
+		};
+		14B4C1131681BAD3009886DF /* SocialSDKXib */ = {
+			isa = PBXGroup;
+			children = (
+				14B4C1141681BAD3009886DF /* UMSCommentDetailController.xib */,
+				14B4C1151681BAD3009886DF /* UMSCommentInputController.xib */,
+				14B4C1161681BAD3009886DF /* UMSCommentInputControlleriPad.xib */,
+				14B4C1171681BAD3009886DF /* UMShareEditViewController.xib */,
+				14B4C1181681BAD3009886DF /* UMShareEditViewControlleriPad.xib */,
+				14B4C1191681BAD3009886DF /* UMSnsAccountViewController.xib */,
+				14B4C11A1681BAD3009886DF /* UMSShareListController.xib */,
+			);
+			path = SocialSDKXib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		143C27631681A24300B80BEC /* iSYSUAlumni */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143C27821681A24300B80BEC /* Build configuration list for PBXNativeTarget "iSYSUAlumni" */;
+			buildPhases = (
+				143C27601681A24300B80BEC /* Sources */,
+				143C27611681A24300B80BEC /* Frameworks */,
+				143C27621681A24300B80BEC /* Resources */,
+				72C8B4487A1B4C8199DD1E9C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSYSUAlumni;
+			productName = iSYSUAlumni;
+			productReference = 143C27641681A24300B80BEC /* iSYSUAlumni.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		143C275B1681A24300B80BEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SYSU;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = again;
+			};
+			buildConfigurationList = 143C275E1681A24300B80BEC /* Build configuration list for PBXProject "iSYSUAlumni" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 143C27591681A24300B80BEC;
+			productRefGroup = 143C27651681A24300B80BEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				143C27631681A24300B80BEC /* iSYSUAlumni */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		143C27621681A24300B80BEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143C27731681A24300B80BEC /* InfoPlist.strings in Resources */,
+				143C277B1681A24300B80BEC /* Default.png in Resources */,
+				143C277D1681A24300B80BEC /* Default@2x.png in Resources */,
+				143C277F1681A24300B80BEC /* Default-568h@2x.png in Resources */,
+				14B4C1231681BAD3009886DF /* UMSCommentDetailController.xib in Resources */,
+				14B4C1241681BAD3009886DF /* UMSCommentInputController.xib in Resources */,
+				14B4C1251681BAD3009886DF /* UMSCommentInputControlleriPad.xib in Resources */,
+				14B4C1261681BAD3009886DF /* UMShareEditViewController.xib in Resources */,
+				14B4C1271681BAD3009886DF /* UMShareEditViewControlleriPad.xib in Resources */,
+				14B4C1281681BAD3009886DF /* UMSnsAccountViewController.xib in Resources */,
+				14B4C1291681BAD3009886DF /* UMSShareListController.xib in Resources */,
+				14B4C12C1681BAD3009886DF /* UMSocialSDKResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72C8B4487A1B4C8199DD1E9C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		143C27601681A24300B80BEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143C27751681A24300B80BEC /* main.m in Sources */,
+				143C27791681A24300B80BEC /* SYSUAppDelegate.m in Sources */,
+				14B4C0DC1681AD27009886DF /* SYSUBaseViewController.m in Sources */,
+				14B4C0DF1681AD57009886DF /* SYSUNewsViewController.m in Sources */,
+				14B4C0E21681AD74009886DF /* SYSUSideMenuViewController.m in Sources */,
+				14B4C11E1681BAD3009886DF /* AFHTTPClient.m in Sources */,
+				14B4C11F1681BAD3009886DF /* AFHTTPRequestOperation.m in Sources */,
+				14B4C1201681BAD3009886DF /* AFURLConnectionOperation.m in Sources */,
+				14B4C1221681BAD3009886DF /* UMSocialBarView.m in Sources */,
+				14B4C13A1681BB85009886DF /* SYSUSNSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		143C27711681A24300B80BEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143C27721681A24300B80BEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		143C27801681A24300B80BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		143C27811681A24300B80BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		143C27831681A24300B80BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B44EA1D8F3408E8FB1C923 /* Pods.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSYSUAlumni/iSYSUAlumni-Prefix.pch";
+				INFOPLIST_FILE = "iSYSUAlumni/iSYSUAlumni-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iSYSUAlumni/ThirdPart/UMSocial_Sdk_1.5.3/frameworks/Wechat\"",
+					"\"$(SRCROOT)/iSYSUAlumni/ThirdPart/UMSocial_Sdk_1.5.3\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		143C27841681A24300B80BEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B44EA1D8F3408E8FB1C923 /* Pods.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSYSUAlumni/iSYSUAlumni-Prefix.pch";
+				INFOPLIST_FILE = "iSYSUAlumni/iSYSUAlumni-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iSYSUAlumni/ThirdPart/UMSocial_Sdk_1.5.3/frameworks/Wechat\"",
+					"\"$(SRCROOT)/iSYSUAlumni/ThirdPart/UMSocial_Sdk_1.5.3\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		143C275E1681A24300B80BEC /* Build configuration list for PBXProject "iSYSUAlumni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143C27801681A24300B80BEC /* Debug */,
+				143C27811681A24300B80BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143C27821681A24300B80BEC /* Build configuration list for PBXNativeTarget "iSYSUAlumni" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143C27831681A24300B80BEC /* Debug */,
+				143C27841681A24300B80BEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 143C275B1681A24300B80BEC /* Project object */;
+}
