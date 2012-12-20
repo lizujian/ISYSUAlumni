@@ -17,19 +17,7 @@ install_resource()
       ;;
   esac
 }
-install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blackArrow.png'
-install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blackArrow@2x.png'
-install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blueArrow.png'
-install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/blueArrow@2x.png'
-install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow.png'
-install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/grayArrow@2x.png'
-install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow.png'
-install_resource 'EGOTableViewPullRefresh/EGOTableViewPullRefresh/Resources/whiteArrow@2x.png'
-install_resource 'MFSideMenu/MFSideMenuDemo/MFSideMenu/back-arrow.png'
-install_resource 'MFSideMenu/MFSideMenuDemo/MFSideMenu/back-arrow@2x.png'
-install_resource 'MFSideMenu/MFSideMenuDemo/MFSideMenu/menu-icon.png'
-install_resource 'MFSideMenu/MFSideMenuDemo/MFSideMenu/menu-icon@2x.png'
-install_resource 'Nimbus/src/webcontroller/resources/NimbusWebController.bundle'
 install_resource 'Nimbus/src/overview/resources/NimbusOverviewer.bundle'
+install_resource 'Nimbus/src/webcontroller/resources/NimbusWebController.bundle'
 install_resource 'Nimbus/src/photos/resources/NimbusPhotos.bundle'
 install_resource 'objectiveflickr/BridgeSupport'

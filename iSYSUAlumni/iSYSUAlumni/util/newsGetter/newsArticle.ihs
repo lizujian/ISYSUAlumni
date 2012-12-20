@@ -1,0 +1,5 @@
+%- http://news2.sysu.edu.cn/ShowArticle.aspx?ArticleID=? -%
+<span class="tc">%info(title)</span>
+<td height="25" align="center"  bgcolor="#F0F0F0">%info(dateTime)</td>
+<td class="ec" style="width:670px; overflow: auto;	white-space:normal;	word-break:break-all;	word-wrap: break-word;">%info(content)</td>
+</body>

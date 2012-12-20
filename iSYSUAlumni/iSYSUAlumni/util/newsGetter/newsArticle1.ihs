@@ -1,0 +1,4 @@
+%- http://news2.sysu.edu.cn/news01/127265.htm -%
+<h1 align="center">%info(title)</h1>
+<h2 align="center">%info(subTitle)</h2>
+<p align="center" style="font-size:12px;color:#666666">稿件来源：%info(source)%s|%s作者：%info(author)%s|%s编辑：%info(editor)%s|%s发布日期：%info(dateTime)%s</p>%info(content)class="clear"></div>

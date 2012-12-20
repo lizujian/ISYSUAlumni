@@ -8,9 +8,9 @@
 
 #import "SYSUBaseViewController.h"
 
-@class MFSideMenu;
+//@class MFSideMenu;
 
 @interface SYSUSideMenuViewController : UITableViewController
 
-@property (nonatomic, unsafe_unretained) MFSideMenu *sideMenu;
+//@property (nonatomic, unsafe_unretained) MFSideMenu *sideMenu;
 @end

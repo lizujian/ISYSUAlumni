@@ -1,0 +1,7 @@
+%- http://news2.sysu.edu.cn/news01/index.htm -%
+%-start-%
+<div class="lan5">%list(list,backward){
+<li><span class="time">%info(articleDate)</span><a href="%info(articleID).htm">%s%s%s%s%s%s%s%s%s%s%s%s%info(articleTitle)%s%s%s%s</a></li>
+}</div>
+</div>
+%-end-%

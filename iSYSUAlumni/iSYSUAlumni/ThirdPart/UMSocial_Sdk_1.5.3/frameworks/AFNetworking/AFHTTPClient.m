@@ -170,10 +170,10 @@ NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value) {
 #pragma mark -
 
 @interface AFHTTPClient ()
-@property (readwrite, nonatomic) NSURL *baseURL;
-@property (readwrite, nonatomic) NSMutableArray *registeredHTTPOperationClassNames;
-@property (readwrite, nonatomic) NSMutableDictionary *defaultHeaders;
-@property (readwrite, nonatomic) NSOperationQueue *operationQueue;
+@property (unsafe_unretained, readwrite, nonatomic) NSURL *baseURL;
+@property (unsafe_unretained, readwrite, nonatomic) NSMutableArray *registeredHTTPOperationClassNames;
+@property (unsafe_unretained, readwrite, nonatomic) NSMutableDictionary *defaultHeaders;
+@property (unsafe_unretained, readwrite, nonatomic) NSOperationQueue *operationQueue;
 #ifdef _SYSTEMCONFIGURATION_H
 @property (readwrite, nonatomic, assign) AFNetworkReachabilityRef networkReachability;
 @property (readwrite, nonatomic, assign) AFNetworkReachabilityStatus networkReachabilityStatus;
@@ -247,11 +247,6 @@ NSArray * AFQueryStringPairsFromKeyAndValue(NSString *key, id value) {
     return self;
 }
 
-- (void)dealloc {
-#ifdef _SYSTEMCONFIGURATION_H
-    [self stopMonitoringNetworkReachability];
-#endif
-}
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"<%@: %p, baseURL: %@, defaultHeaders: %@, registeredOperationClasses: %@, operationQueue: %@>", NSStringFromClass([self class]), self, [self.baseURL absoluteString], self.defaultHeaders, self.registeredHTTPOperationClassNames, self.operationQueue];
@@ -1062,7 +1057,6 @@ typedef enum {
 - (void)dealloc {
     if (_inputStream) {
         [_inputStream close];
-        _inputStream = nil;
     }    
 }
 

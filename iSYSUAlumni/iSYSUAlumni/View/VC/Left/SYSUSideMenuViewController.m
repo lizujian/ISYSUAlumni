@@ -7,7 +7,7 @@
 //
 
 #import "SYSUSideMenuViewController.h"
-#import "MFSideMenu.h"
+#import "IIViewDeckController.h"
 #import "SYSUNewsViewController.h"
 #import "SYSUSNSViewController.h"
 @interface SYSUSideMenuViewController ()
@@ -15,7 +15,7 @@
 @end
 
 @implementation SYSUSideMenuViewController
-@synthesize sideMenu;
+//@synthesize sideMenu;
 @synthesize sideMenuArr;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -80,27 +80,35 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    SYSUBaseViewController *VC = nil;
+    SYSUBaseViewController *baseVC = nil;
     switch (indexPath.row) {
         case 0:
         {
-            VC = [[SYSUNewsViewController alloc]init];
+            if ([self.viewDeckController.centerController isKindOfClass:[SYSUNewsViewController class]]) {
+                ;
+            }
+            else {
+                baseVC = [[SYSUNewsViewController alloc]init];
+            }
         }
             break;
         case 2:
         {
-            VC = [[SYSUSNSViewController alloc]init];
+            if ([self.viewDeckController.centerController isKindOfClass:[SYSUSNSViewController class]]) {
+                ;
+            }
+            else {
+                baseVC = [[SYSUSNSViewController alloc]init];
+            }
         }
-            break;
         default:
             break;
     }
-    if (VC) {
-        VC.title = [sideMenuArr objectAtIndex:indexPath.row];
-        NSArray *controllers = [NSArray arrayWithObject:VC];
-        self.sideMenu.navigationController.viewControllers = controllers;
-        [self.sideMenu setMenuState:MFSideMenuStateHidden];
+    if (nil != baseVC) {
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:baseVC];
+        self.viewDeckController.centerController = nav;
     }
+    [self.viewDeckController closeLeftViewAnimated:YES];
 }
 
 

@@ -7,60 +7,11 @@
 //
 
 #import "SYSUAppDelegate.h"
-#import "MFSideMenu.h"
+#import "IIViewDeckController.h"
 #import "SYSUSideMenuViewController.h"
 #import "SYSUNewsViewController.h"
 
 @implementation SYSUAppDelegate
-
-
-- (SYSUNewsViewController *)demoController {
-    return [[SYSUNewsViewController alloc] init];
-}
-
-- (UINavigationController *)navigationController {
-    return [[UINavigationController alloc]
-            initWithRootViewController:[self demoController]];
-}
-
-- (MFSideMenu *)sideMenu {
-    SYSUSideMenuViewController *sideMenuController = [[SYSUSideMenuViewController alloc] init];
-    UINavigationController *navigationController = [self navigationController];
-    
-    MFSideMenuOptions options = MFSideMenuOptionMenuButtonEnabled|MFSideMenuOptionBackButtonEnabled
-    |MFSideMenuOptionShadowEnabled;
-    MFSideMenuPanMode panMode = MFSideMenuPanModeNavigationBar|MFSideMenuPanModeNavigationController;
-    
-    MFSideMenu *sideMenu = [MFSideMenu menuWithNavigationController:navigationController
-                                                 sideMenuController:sideMenuController
-                                                           location:MFSideMenuLocationLeft
-                                                            options:options
-                                                            panMode:panMode];
-    
-    sideMenuController.sideMenu = sideMenu;
-    
-    return sideMenu;
-}
-
--(MFSideMenu *)FriendsMenu {
-    SYSUSideMenuViewController *sideMenuController = [[SYSUSideMenuViewController alloc] init];
-    UINavigationController *navigationController = [self navigationController];
-    
-    MFSideMenuOptions options = MFSideMenuOptionMenuButtonEnabled|MFSideMenuOptionBackButtonEnabled
-    |MFSideMenuOptionShadowEnabled;
-    MFSideMenuPanMode panMode = MFSideMenuPanModeNavigationBar|MFSideMenuPanModeNavigationController;
-    
-    MFSideMenu *sideMenu = [MFSideMenu menuWithNavigationController:navigationController
-                                                 sideMenuController:sideMenuController
-                                                           location:MFSideMenuLocationRight
-                                                            options:options
-                                                            panMode:panMode];
-    
-    sideMenuController.sideMenu = sideMenu;
-    
-    return sideMenu;
-}
-
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -68,7 +19,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [self sideMenu].navigationController;
+    SYSUNewsViewController *newsCenterVC = [[SYSUNewsViewController alloc]init];
+    UINavigationController *centerNav = [[UINavigationController alloc]initWithRootViewController:newsCenterVC];
+    SYSUSideMenuViewController *leftMenuSideVC = [[SYSUSideMenuViewController alloc]init];
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerNav
+                                                                                    leftViewController:leftMenuSideVC
+                                                                                   rightViewController:nil];
+    deckController.rightSize = 100;
+    self.window.rootViewController = deckController;
     [self.window makeKeyAndVisible];
     return YES;
 }

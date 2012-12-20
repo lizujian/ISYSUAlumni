@@ -1,0 +1,11 @@
+%- http://alumni.sysu.edu.cn/suaa/newslist.do?type=col&typeValue=c2010 -%
+%-start-%
+<table width="100%%" cellspacing="1">%list(list,backward){
+<tr>
+<td class="gfont" height="28"><a title="%info(articleTitle)" href="showNews.do?lmid=c2010&newsId=%info(articleID)">
+</td>
+<td width="150" align="center" class="gfont">%info(articleDate)</td>
+</tr>
+}</table>
+</table>
+%-end-%

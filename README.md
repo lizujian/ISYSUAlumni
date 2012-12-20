@@ -6,5 +6,10 @@ ISYSUAlumni
 2012.12.19
 初始化好项目，引入几个开源的库，开源库使用pod去管理
 
+2012.12.20
+换了一个左右切换的框架，现在比之前好用很多了。
+测试了一下友盟的那个SNS分享工具，未来会封装到engine里面
+将旧的拉取新闻的代码移到这里，并转成arc，新闻页面暂时没有做好，明天估计可以做好
 
 PS:使用Pod去管理，所以需要打开iSYSUAlumni.xcworkspace文件，而不是iSYSUAlumni.xcodeproj
+
